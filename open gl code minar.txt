@@ -1,0 +1,270 @@
+#include<GL/gl.h>
+#include<GL/glu.h>
+#include <GL/glut.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <windows.h>
+
+
+int windowWidth=1200;
+int windowHeight=590;
+
+
+
+void display(void)
+
+{
+glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
+glMatrixMode( GL_PROJECTION );
+glLoadIdentity();
+gluOrtho2D(0, 12, 0, 12);
+glMatrixMode( GL_MODELVIEW );
+glLoadIdentity();
+glViewport(0,0,windowWidth ,windowHeight);
+
+
+
+ glPushMatrix();
+  glBegin(GL_QUADS);
+  glColor3f(0.0,0.0,1.0);
+ glVertex2f(1,1.2);
+ glVertex2f(1,0.3);
+ glVertex2f(6.9,0.3);
+ glVertex2f(6.9,1.2);
+ glEnd();
+ glPopMatrix();
+
+
+  glPushMatrix();
+  glBegin(GL_QUADS);
+  glColor3f(0,255,0);
+ glVertex2f(2,2);
+ glVertex2f(1,1.2);
+ glVertex2f(6.8,1.2);
+ glVertex2f(5.9,2);
+ glEnd();
+ glPopMatrix();
+
+ glPushMatrix();
+  glBegin(GL_QUADS);
+  glColor3f(0.0,0.0,1.0);
+ glVertex2f(2.1,5.5);
+ glVertex2f(2.1,2);
+ glVertex2f(2.6,2);
+ glVertex2f(2.6,5.5);
+ glEnd();
+ glPopMatrix();
+
+
+ glPushMatrix();
+  glBegin(GL_QUADS);
+  glColor3f(0.0,0.0,1.0);
+ glVertex2f(2.9,6.5);
+ glVertex2f(2.9,2);
+ glVertex2f(3.4,2);
+ glVertex2f(3.4,6.5);
+ glEnd();
+ glPopMatrix();
+
+
+ glPushMatrix();
+  glBegin(GL_QUADS);
+  glColor3f(0.0,0.0,1.0);
+ glVertex2f(3.7,7.5);
+ glVertex2f(3.7,2);
+ glVertex2f(4.2,2);
+ glVertex2f(4.2,7.5);
+ glEnd();
+ glPopMatrix();
+
+
+ glPushMatrix();
+  glBegin(GL_QUADS);
+  glColor3f(0.0,0.0,1.0);
+ glVertex2f(4.5,6.5);
+ glVertex2f(4.5,2);
+ glVertex2f(5,2);
+ glVertex2f(5,6.5);
+ glEnd();
+ glPopMatrix();
+
+
+glPushMatrix();
+  glBegin(GL_QUADS);
+  glColor3f(0.0,0.0,1.0);
+ glVertex2f(5.3,5.5);
+ glVertex2f(5.3,2);
+ glVertex2f(5.8,2);
+ glVertex2f(5.8,5.5);
+ glEnd();
+ glPopMatrix();
+
+glPushMatrix();
+  glBegin(GL_QUADS);
+  glColor3f(0.0,0.0,1.0);
+ glVertex2f(7.5,8.5);
+ glVertex2f(7.5,0.2);
+ glVertex2f(10.2,0.2);
+ glVertex2f(10.2,8.5);
+ glEnd();
+ glPopMatrix();
+
+
+glPushMatrix();
+  glBegin(GL_QUADS);
+  glColor3f(0,255,0);
+ glVertex2f(7.8,7.5);
+ glVertex2f(7.8,5.9);
+ glVertex2f(8.5,5.9);
+ glVertex2f(8.5,7.5);
+ glEnd();
+ glPopMatrix();
+
+
+  glPushMatrix();
+  glBegin(GL_QUADS);
+  glColor3f(0,255,0);
+ glVertex2f(7.8,5.1);
+ glVertex2f(7.8,3.4);
+ glVertex2f(8.5,3.4);
+ glVertex2f(8.5,5.1);
+ glEnd();
+ glPopMatrix();
+
+
+ glPushMatrix();
+  glBegin(GL_QUADS);
+  glColor3f(0,255,0);
+ glVertex2f(7.8,2.6);
+ glVertex2f(7.8,1);
+ glVertex2f(8.5,1);
+ glVertex2f(8.5,2.6);
+ glEnd();
+ glPopMatrix();
+
+
+ glPushMatrix();
+  glBegin(GL_QUADS);
+  glColor3f(0,255,0);
+ glVertex2f(9.2,2.6);
+ glVertex2f(9.2,1);
+ glVertex2f(9.9,1);
+ glVertex2f(9.9,2.6);
+ glEnd();
+ glPopMatrix();
+
+
+  glPushMatrix();
+  glBegin(GL_QUADS);
+  glColor3f(0,255,0);
+ glVertex2f(9.2,5.1);
+ glVertex2f(9.2,3.4);
+ glVertex2f(9.9,3.4);
+ glVertex2f(9.9,5.1);
+ glEnd();
+ glPopMatrix();
+
+
+glPushMatrix();
+  glBegin(GL_QUADS);
+  glColor3f(0,255,0);
+ glVertex2f(9.2,7.5);
+ glVertex2f(9.2,5.9);
+ glVertex2f(9.9,5.9);
+ glVertex2f(9.9,7.5);
+ glEnd();
+ glPopMatrix();
+
+
+
+
+
+
+
+
+
+ glPushMatrix();
+ glBegin(GL_TRIANGLES);
+ glColor3f(0,255,0);
+ glVertex2f(2.1,5.5);
+ glVertex2f(2.6,5.5);
+ glVertex2f(2.35,6);
+ glEnd();
+ glPopMatrix();
+
+ glPushMatrix();
+ glBegin(GL_TRIANGLES);
+ glColor3f(0,255,0);
+  glVertex2f(2.9,6.5);
+  glVertex2f(3.4,6.5);
+  glVertex2f(3.15,7);
+ glEnd();
+ glPopMatrix();
+
+
+ glPushMatrix();
+ glBegin(GL_TRIANGLES);
+ glColor3f(0,255,0);
+ glVertex2f(3.7,7.5);
+ glVertex2f(4.2,7.5);
+ glVertex2f(3.95,8);
+
+ glEnd();
+ glPopMatrix();
+
+
+
+
+  glPushMatrix();
+ glBegin(GL_TRIANGLES);
+ glColor3f(0,255,0);
+  glVertex2f(4.5,6.5);
+  glVertex2f(5,6.5);
+  glVertex2f(4.75,7);
+
+ glEnd();
+ glPopMatrix();
+
+ glPushMatrix();
+ glBegin(GL_TRIANGLES);
+ glColor3f(0,255,0);
+ glVertex2f(5.3,5.5);
+ glVertex2f(5.8,5.5);
+ glVertex2f(5.55,6);
+
+
+ glEnd();
+ glPopMatrix();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+glFlush();
+glutSwapBuffers();
+}
+
+int main (int argc, char **argv)
+{
+glutInit(&argc, argv);
+glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
+glutInitWindowPosition(120,110);
+glutInitWindowSize(windowWidth, windowHeight);
+glutCreateWindow("Ahnaf Tahmid Hasan s Drawing ");
+
+glutDisplayFunc(display);
+glutMainLoop();
+return 0;
+}
